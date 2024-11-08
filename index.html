@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Speaker component </title>
+</head>
+<body>
+  
+</body>
+</html><link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+<div class="speaker-section">
+    <!-- Slider: List of Speaker Cards -->
+    <div class="speaker-section__slider">
+      <div class="speaker-section__card" onclick="showSpeakerInfo('speaker1')">
+        <img src="speaker1.jpg" alt="Speaker 1" class="speaker-section__card-image">
+        <h3 class="speaker-section__card-name">Speaker Name 1</h3>
+        <p class="speaker-section__card-bio">Short bio or title</p>
+      </div>
+      
+      <div class="speaker-section__card" onclick="showSpeakerInfo('speaker2')">
+        <img src="speaker2.jpg" alt="Speaker 2" class="speaker-section__card-image">
+        <h3 class="speaker-section__card-name">Speaker Name 2</h3>
+        <p class="speaker-section__card-bio">Short bio or title</p>
+      </div>
+  
+      <!-- Add more speaker cards as needed -->
+    </div>
+  
+    <!-- Modal: Detailed Speaker Info -->
+    <div id="speaker-modal" class="speaker-section__modal" aria-hidden="true">
+      <div class="speaker-section__modal-content">
+        <button class="speaker-section__modal-close" onclick="closeModal()" aria-label="Close modal">×</button>
+        <div class="speaker-section__modal-body">
+          <!-- Dynamic content injected by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
